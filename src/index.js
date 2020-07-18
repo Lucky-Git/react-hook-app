@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 function tick(){
   const element = (
     <div>
-      <h1>hello world11111111ss</h1>
+      <h1>hello world</h1>
       <h2>It is {new Date().toLocaleTimeString()}</h2>
     </div>
   );
