@@ -3,12 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Example from './test';
+import MyContext from './context'
 
 function tick(){
   const element = (
     <div>
       <h1>hello world</h1>
       <h2>It is {new Date().toLocaleTimeString()}</h2>
+      <MyContext/>
+      <Example />
     </div>
   );
   ReactDOM.render(
