@@ -4,7 +4,22 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Example from './test';
-import MyContext from './context'
+import MyContext from './context';
+import Counter from './redux/Counter';
+import { createStore } from 'redux'
+// const reducer = (state=0,action) => {
+//   switch (action.type){
+//       case 'add':
+//           return state+1;
+//       case 'minus':
+//           return state-1;
+//       default:
+//           return state;
+//   }
+// }
+
+// const store = createStore(reducer);
+
 
 function tick(){
   const element = (
@@ -13,6 +28,11 @@ function tick(){
       <h2>It is {new Date().toLocaleTimeString()}</h2>
       <MyContext/>
       <Example />
+      {/* <Counter
+            value={store.getState()}
+            onIncrement={()=>store.dispatch({type:'add'})}
+            onDecrement={()=>store.dispatch({type:'minus'})}
+        />, */}
     </div>
   );
   ReactDOM.render(

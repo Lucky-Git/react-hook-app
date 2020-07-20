@@ -15,6 +15,7 @@ class ThemeButton extends React.Component{
     render(){
         console.log(this.context)
         return(
+            
             <div style={{width:'100px',height:'100px',background:`${this.context}`}}>
 
             </div>
